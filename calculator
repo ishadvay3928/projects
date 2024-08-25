@@ -11,9 +11,3 @@ while (True):
            print(f"Your Bill is {sum}.Thanks for shopping with us!")
            break
                
-# isha kirana store 
-# 1. 10
-# 2. 20
-# 3. 30
-# 4. 45
-# 5. 05
