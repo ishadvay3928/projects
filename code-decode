@@ -1,0 +1,31 @@
+print ("welcome to my code generator!")
+# Take the input from the user
+user_input = input("Enter the word: ") 
+
+# define the coding function in which will make the code out the input   
+def coding(code_word):
+    input_list = list(user_input)  # list coversion of user input
+    reverse = list(reversed(input_list)) # reversing the order
+    random = ['a','x','w','e'] 
+    reverse.extend(random)   # adding a series of random strings
+    reverse.insert(2,'j')    # insertion of 'j' at third position 
+    code_word =''.join(reverse)   # join the list 
+    return code_word
+
+# define the decoding function in which the actual input will be recorded     
+def decoding(decode_word):
+    decode_word = user_input
+    return decode_word
+
+# define the main function in which coding and decoding functions will be recorded     
+def main():
+    encoded_word = coding(user_input)
+    decoded_word = decoding(user_input)
+ 
+    # Now print the results
+    print("The code for your word : ", encoded_word)
+    print("Decoded word : ", decoded_word)
+    print("Thanks for using...\n","VISIT AGAIN !!")
+
+if __name__=="__main__":
+    main()

@@ -1,0 +1,19 @@
+#write a python program which will keep adding a stream of numbers inputted by the user . the adding stops as soon as the user presses 'q' key on the keyboard
+
+sum = 0
+while (True):
+      user_input = (input("Enter Price:\n"))
+      if (user_input != 'q' ):
+          sum = sum + int(user_input)
+          print(f"Order Total so far: {sum}")
+
+      else:
+           print(f"Your Bill is {sum}.Thanks for shopping with us!")
+           break
+               
+# isha kirana store 
+# 1. 10
+# 2. 20
+# 3. 30
+# 4. 45
+# 5. 05
